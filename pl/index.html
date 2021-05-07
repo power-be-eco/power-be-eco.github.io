@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PO WER Be Eco! - Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+  <div class="container">
+    <span id="no">Pytanie 1 z</span>
+    <div class="quiz-container">
+        <div id="quiz"></div>
+      </div>
+      <div id="button-container">
+        <button id="previous">Poprzednie Pytanie</button>
+        <button id="next">Następne Pytanie</button>
+        <button id="submit">Wyślij Quiz</button>
+      </div>
+      <div id="results"></div><br>
+      <span id="warning">Wybierz odpowiedź by kontynuować.</span>
+    </div>
+    <div class="overlay">
+      <div class="pane winner">
+        <span class="result-text">
+          Gratulacje!
+        </span>
+        <br><br><br>
+        Udało ci się odpowiedzieć prawidłowo na wszystkie pytania. Przygotowaliśmy dla ciebie odznakę do pobrania i wydrukowania, dzięki której pokażesz że JESTEŚ EKO! <br><br><br>
+        <img class="certificate" src="img/certificate.png"><img/> <br><br><br>
+        <a href="img/certificate.png" download="certificate.jpg"><button id="download">Pobierz</button></a>
+      </div>
+
+      <div class="pane loser">
+        <span class="result-text">
+          Powodzenia następnym razem...
+        </span>
+        <br><br><br>
+        Nie wszystkie twoje odpowiedzi były prawidłowe. Spróbuj ponownie by BYĆ EKO!<br>
+        <span id="score">Score: 0%</span>
+        <br><br>
+        <button id="try-again" onClick="window.location.reload();">Spróbuj Ponownie</button>
+      </div>
+    </div>
+</body>
+</html>

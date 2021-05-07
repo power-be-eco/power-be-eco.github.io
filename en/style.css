@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body {
+  font-size: 30px;
+  font-family: "Work Sans", sans-serif;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: rgb(227, 255, 230);
+}
+h1 {
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 4vw;
+  background-color: #444;
+  color: #fff;
+}
+.question {
+  font-size: 50px;
+  margin-bottom: 10px;
+  height: auto;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-text {
+  font-size: 50px;
+  margin-bottom: 10px;
+  height: auto;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+.answers {
+  margin-bottom: 20px;
+  height: auto;
+}
+.answers label {
+  margin-bottom: 10px;
+}
+button {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.2vmax;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 1vmax;
+  cursor: pointer;
+  margin-top: 0.5vmax;
+}
+
+#button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1vmax;
+  height: 6vmax;
+  width: 100%;
+  background-color: rgba(202, 226, 199, 0.897);
+  z-index: 3;
+}
+
+button:hover {
+  background-color: #38a;
+}
+
+#warning {
+  color: rgb(252, 63, 63);
+  position: fixed;
+  top: 10px;
+  padding: 10px;
+  transition: opacity 0.5s;
+  background-color: white;
+  opacity: 0;
+  z-index: 10;
+  display: block;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  padding-bottom: 6vmax;
+  background-color: rgba(255, 255, 255, 0.459);
+  padding-top: 2vmax;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container {
+  position: relative;
+  margin-top: 4vh;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.pane {
+  background-color: white;
+  width: 80%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: auto;
+  display: none;
+  box-sizing: border-box;
+  padding: 1vmax;
+}
+
+.certificate {
+  width: 40%;
+  filter: drop-shadow(0px 5px 5px #2222);
+}
